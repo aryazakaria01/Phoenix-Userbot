@@ -36,7 +36,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("`Terjadi Kesalahan... Silahkan Hubungi` @SyndicateTwenty4", str(err))
+            return await event.edit("`Terjadi Kesalahan... Silahkan Hubungi` @BadBoyanim", str(err))
     return user_obj, extra
 
 
@@ -160,7 +160,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"╭─━━━━━━━━━━━━━━━─╮\nㅤㅤ[⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](t.me/LynxUserbot)\n╭─━━━━━━━━━━━━━━━─╯\n**│• GBAN By :** `{ALIVE_NAME}`\n**│• User Account :** [{user.first_name}](tg://user?id={user.id})\n**│• Action :** `GBanned` ✅\n╰━━━━━━━━━━━━━━━━━╯"
+        f"╭─━━━━━━━━━━━━━━━─╮\nㅤㅤ[⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡](t.me/GeezSupportGroup)\n╭─━━━━━━━━━━━━━━━─╯\n**│• GBAN By :** `{ALIVE_NAME}`\n**│• User Account :** [{user.first_name}](tg://user?id={user.id})\n**│• Action :** `GBanned` ✅\n╰━━━━━━━━━━━━━━━━━╯"
     )
 
 
@@ -224,7 +224,7 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"╭─━━━━━━━━━━━━━━━─╮\nㅤㅤ[⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](t.me/LynxUserbot)\n╭─━━━━━━━━━━━━━━━─╯\n**│• UnGBAN By :** `{ALIVE_NAME}`\n**│• User Account :** [{user.first_name}](tg://user?id={user.id})\n**│• Action :** `GBanned` ❌\n╰━━━━━━━━━━━━━━━━━╯"
+        f"╭─━━━━━━━━━━━━━━━─╮\nㅤㅤ[⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡](t.me/GeezSupportGroup)\n╭─━━━━━━━━━━━━━━━─╯\n**│• UnGBAN By :** `{ALIVE_NAME}`\n**│• User Account :** [{user.first_name}](tg://user?id={user.id})\n**│• Action :** `GBanned` ❌\n╰━━━━━━━━━━━━━━━━━╯"
     )
 
 
