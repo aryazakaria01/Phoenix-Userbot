@@ -37,7 +37,7 @@
 </p>
 
 <h2 align="center">
-⚡Lynx Userbot⚡
+⚡Phoenix Userbot⚡
 </p>
 
 <p align="center">
