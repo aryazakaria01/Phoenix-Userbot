@@ -24,10 +24,10 @@ import re
 from PIL import Image
 
 
-# Ported for Lynx-Userbot by @SyndicateTwenty4
+# Ported for Phoenix-Userbot by @Badboynim
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-# REPOLINK = str(UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/KENZO-404/Lynx-Userbot"
+# REPOLINK = str(UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/aryazakaria01/Phoenix-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -67,23 +67,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Lynx-Userbot....`")
+    await event.edit("`Mematikan Phoenix-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`Lynx-Userbot Telah Dimatikan`")
+                                        "`Phoenix-Userbot Telah Dimatikan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Lynx-Userbot...`")
+    await event.edit("`Restarting Phoenix-Userbot...`")
     await asyncio.sleep(3)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT\n"
-                                        "`Lynx-Userbot Reconnecting...`")
+                                        "`Phoenix-Userbot Reconnecting...`")
     try:
         from userbot.modules.sql_helper.globals import addgvar, delgvar
 
@@ -101,7 +101,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡Lynx-Userbot⚡ Repo](https://github.com/KENZO-404/Lynx-Userbot/blob/Lynx-Userbot/README.md)"
+        "\n[⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ Repo](https://github.com/aryazakaria01/Phoenix-Userbot/blob/Phoenix-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -126,11 +126,11 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭─━━━━━━━━━━━━━─╮\n"
         "                  ʀᴇᴘᴏ\n"
-        "    [⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡](https://kenzo-404.github.io/Lynx-Userbot)\n"
+        "    [⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡](https://aryazakaria01.github.io/Phoenix-Userbot)\n"
         "╭─━━━━━━━━━━━━━─╯\n"
-        "│⊙ **Dᴇᴠᴇʟᴏᴘᴇʀ :** [ᴀxᴇʟ](https://github.com/KENZO-404)\n"
+        "│⊙ **Dᴇᴠᴇʟᴏᴘᴇʀ :** [ᴀʀʏᴀ ᴢᴀᴋᴀʀɪᴀ](https://github.com/aryazakaria01)\n"
         "╰━━━━━━━━━━━━━━━╯\n"
-        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/KENZO-404/Lynx-Userbot/blob/Lynx-Userbot/LICENSE)"
+        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/aryazakaria01/Phoenix-Userbot/blob/Phoenix-Userbot/LICENSE)"
     )
 
 
