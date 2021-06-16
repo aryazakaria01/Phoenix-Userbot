@@ -3,7 +3,7 @@
 # you may not use this file except in compliance with the License.
 # Credits Inline @keselekpermen69 / @Ultroid / @LynxUserbot
 # Credits Logs @BianSepang , @KenHV
-# Ported @SyndicateTwenty4
+# Ported @Badboyanim
 """Userbot initialization."""
 
 import signal
@@ -412,7 +412,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡Has Been Active!!```")
     return
 
 with bot:
@@ -499,15 +499,15 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hai 👋 [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang di ⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\nJika Kalian Datang Kesini dan Ingin Mengetahui Lynx-Robot Lebih Lanjut,\nSilahkan Pilih **Menu Bantuan** Dibawah Ini.\n",
+                    f"Hai 👋 [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang di ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\nJika Kalian Datang Kesini dan Ingin Mengetahui Phoenix-Robot Lebih Lanjut,\nSilahkan Pilih **Menu Bantuan** Dibawah Ini.\n",
                     buttons=[
                         [
-                             Button.url("📢 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📢",
-                                        "t.me/FederationSuperGroup/3"),
-                             Button.url("🚨 𝗠𝗲𝗻𝘂-𝗕𝗮𝗻𝘁𝘂𝗮𝗻 🚨",
-                                        "https://telegra.ph/Bantuan-06-11")],
+                             Button.url("📢 𝗚𝗿𝗼𝘂𝗽 📢",
+                                        "t.me/GeezSupportGroup"),
+                             Button.url("🚨 𝗚𝗿𝗼𝘂𝗽 🚨",
+                                        "https://sekolahwibu")],
                              [Button.url("👤 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 👤",
-                                        "t.me/FederationSuperGroup/17")],
+                                        "t.me/GeezSupportGroup")],
                     ]
                 )
 
@@ -516,10 +516,10 @@ with bot:
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    f"⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Deploy to Heroku, Click Here 👇🏻",
+                    f"⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Deploy to Heroku, Click Here 👇🏻",
                     buttons=[
-                        [Button.url("⚒️ 𝗗𝗘𝗣𝗟𝗢𝗬 ⚒️", "https://heroku.com/deploy?template=https://github.com/KENZO-404/Lynx-Userbot/tree/Lynx-Userbot")],
-                        [Button.url("👥 𝗚𝗥𝗢𝗨𝗣 👥", "t.me/GroupTidakDiketahui")],
+                        [Button.url("⚒️ 𝗗𝗘𝗣𝗟𝗢𝗬 ⚒️", "https://heroku.com/deploy?template=https://github.com/aryazakaria01/Phoenix-Userbot/tree/Phoenix-Userbot")],
+                        [Button.url("👥 𝗚𝗥𝗢𝗨𝗣 👥", "t.me/GeezSupportGroup")],
                     ],
                 )
 
@@ -530,17 +530,17 @@ with bot:
                 u = await event.client.get_entity(event.chat_id)
                 await event.message.get_sender()
                 text = (
-                   f"Haii 😼 [{get_display_name(u)}](tg://user?id={u.id}) My Name is 𝗟𝘆𝗻𝘅 🐈\n"
-                   f"Lynx Used For Fun On Telegram✨,\n"
+                   f"Haii 😼 [{get_display_name(u)}](tg://user?id={u.id}) My Name is 𝗣𝗵𝗼𝗲𝗻𝗶𝘅 🐈\n"
+                   f"Phoenix Used For Fun On Telegram✨,\n"
                    f"and For Maintaining Your Group 🛠️.\n"
-                   f"I was **Created by :** @SyndicateTwenty4 For Various Userbots on Github.\n")
+                   f"I was **Created by :** @BadBoyanim For Various Userbots on Github.\n")
                 await tgbot.send_file(event.chat_id, file=lynxlogo,
                                      caption=text,
                                      buttons=[
                                          [
                                              custom.Button.url(
                                                  text="🇮🇩 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 🇮🇩",
-                                                 url="https://kenzo-404.github.io/Lynx-Userbot/"
+                                                 url="https://aryazakaria01.github.io/Phoenix-Userbot/"
                                              )
                                          ]
                                      ]
@@ -562,34 +562,34 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@LynxRobot"):
+            if event.query.user_id == uid and query.startswith("@Geezing_bot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=lynxlogo,
                     link_preview=False,
-                    text=f"\n**Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n\n◎› **Bᴏᴛ ᴠᴇʀ :** `v.{BOT_VER}`\n◎› **Pʟᴜɢɪɴꜱ :** `{len(plugins)}`\n\n**Cᴏᴘʏʀɪɢʜᴛ © 𝟤𝟢𝟤𝟣 Lʏɴx-Uꜱᴇʀʙᴏᴛ**".format(
+                    text=f"\n**Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n\n◎› **Bᴏᴛ ᴠᴇʀ :** `v.{BOT_VER}`\n◎› **Pʟᴜɢɪɴꜱ :** `{len(plugins)}`\n\n**Cᴏᴘʏʀɪɢʜᴛ © 𝟤𝟢𝟤𝟣 ᴘʜᴏᴇɴɪx-Uꜱᴇʀʙᴏᴛ**".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    "Bantuan Dari ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ╔╡⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞╗ ",
-                    text="""**Anda Bisa Membuat ⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Anda Sendiri\nDengan Cara :**__Tekan Dibawah Ini__ 👇""",
+                    " ╔╡⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞╗ ",
+                    text="""**Anda Bisa Membuat ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Anda Sendiri\nDengan Cara :**__Tekan Dibawah Ini__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡𝗟𝘆𝗻𝘅⚡",
-                                "https://kenzo-404.github.io/Lynx-Userbot"),
+                                "⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅⚡",
+                                "https://aryazakaria01.github.io/Phoenix-Userbot"),
                             custom.Button.url(
                                 "Dᴇᴠᴇʟᴏᴘᴇʀ",
-                                "t.me/FederationSuperGroup/17")] 
+                                "t.me/GeezSupportGroup")] 
                     ],
                     link_preview=False,
                 )
@@ -626,8 +626,7 @@ with bot:
                     file=lynxlogo,
                     link_preview=True,
                     buttons=[
-                          [Button.url("⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡", "t.me/LynxUserbot")],
-                          [Button.url("[⊙] 𝗠𝘆 𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺", f"{INSTAGRAM_ALIVE}")],
+                          [Button.url("⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡", "t.me/Geezing_bot")],
                     ]
                 )
 
@@ -702,7 +701,7 @@ with bot:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ is Back Up and Running!**\n\n"
+        f"**⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ is Back Up and Running!**\n\n"
         f"**Telethon :** __{version.__version__}__\n"
         f"**Python :** __{python_version()}__\n"
         f"**User :** __{DEFAULTUSER}__"
