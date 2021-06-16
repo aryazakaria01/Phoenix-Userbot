@@ -412,7 +412,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ Has Been Active!!```")
     return
 
 with bot:
@@ -499,14 +499,14 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hai 👋 [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang di ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\nJika Kalian Datang Kesini dan Ingin Mengetahui Phoenix-Robot Lebih Lanjut,\nSilahkan Pilih **Menu Bantuan** Dibawah Ini.\n",
+                    f"Hai 👋 [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang di ⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡\nᴊɪᴋᴀ ᴋᴀʟɪᴀɴ ᴅᴀᴛᴀɴɢ ᴋᴇsɪɴɪ ᴅᴀɴ ɪɴɢɪɴ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴘʜᴏᴇɴɪx-ʀᴏʙᴏᴛ ʟᴇʙɪʜ ʟᴀɴᴊᴜᴛ,\nsɪʟᴀʜᴋᴀɴ ᴘɪʟɪʜ **ᴍᴇɴᴜ ʙᴀɴᴛᴜᴀɴ** ᴅɪʙᴀᴡᴀʜ ɪɴɪ.\n",
                     buttons=[
                         [
-                             Button.url("📢 𝗚𝗿𝗼𝘂𝗽 📢",
+                             Button.url("📢 ɢʀᴏᴜᴘ 📢",
                                         "t.me/GeezSupportGroup"),
-                             Button.url("🚨 𝗚𝗿𝗼𝘂𝗽 🚨",
+                             Button.url("🚨 ɢʀᴏᴜᴘ 🚨",
                                         "https://sekolahwibu")],
-                             [Button.url("👤 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 👤",
+                             [Button.url("👤 ᴅᴇᴠᴇʟᴏᴘᴇʀ 👤",
                                         "t.me/GeezSupportGroup")],
                     ]
                 )
@@ -516,10 +516,10 @@ with bot:
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    f"⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Deploy to Heroku, Click Here 👇🏻",
+                    f"⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ, ᴄʟɪᴄᴋ ʜᴇʀᴇ 👇🏻",
                     buttons=[
-                        [Button.url("⚒️ 𝗗𝗘𝗣𝗟𝗢𝗬 ⚒️", "https://heroku.com/deploy?template=https://github.com/aryazakaria01/Phoenix-Userbot/tree/Phoenix-Userbot")],
-                        [Button.url("👥 𝗚𝗥𝗢𝗨𝗣 👥", "t.me/GeezSupportGroup")],
+                        [Button.url("⚒️ ᴅᴇᴘʟᴏʏ ⚒️", "https://heroku.com/deploy?template=https://github.com/aryazakaria01/Phoenix-Userbot/tree/Phoenix-Userbot")],
+                        [Button.url("👥 ɢʀᴏᴜᴘ 👥", "t.me/GeezSupportGroup")],
                     ],
                 )
 
@@ -530,16 +530,16 @@ with bot:
                 u = await event.client.get_entity(event.chat_id)
                 await event.message.get_sender()
                 text = (
-                   f"Haii 😼 [{get_display_name(u)}](tg://user?id={u.id}) My Name is 𝗣𝗵𝗼𝗲𝗻𝗶𝘅 🐈\n"
-                   f"Phoenix Used For Fun On Telegram✨,\n"
-                   f"and For Maintaining Your Group 🛠️.\n"
-                   f"I was **Created by :** @BadBoyanim For Various Userbots on Github.\n")
+                   f"ʜᴀɪɪ 😼 [{get_display_name(u)}](tg://user?id={u.id}) ᴍʏ ɴᴀᴍᴇ ɪs ᴘʜᴏᴇɴɪx 🐈\n"
+                   f"ᴘʜᴏᴇɴɪx ᴜsᴇᴅ ғᴏʀ ғᴜɴ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ✨,\n"
+                   f"ᴀɴᴅ ғᴏʀ ᴍᴀɪɴᴛᴀɪɴɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🛠️.\n"
+                   f"ɪ ᴡᴀs **ᴄʀᴇᴀᴛᴇᴅ ʙʏ :** @BadBoyanim ғᴏʀ ᴠᴀʀɪᴏᴜs ᴜsᴇʀʙᴏᴛs ᴏɴ ɢɪᴛʜᴜʙ.\n")
                 await tgbot.send_file(event.chat_id, file=lynxlogo,
                                      caption=text,
                                      buttons=[
                                          [
                                              custom.Button.url(
-                                                 text="🇮🇩 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆 🇮🇩",
+                                                 text="🇮🇩 ʀᴇᴘᴏsɪᴛᴏʀʏ 🇮🇩",
                                                  url="https://aryazakaria01.github.io/Phoenix-Userbot/"
                                              )
                                          ]
@@ -574,18 +574,18 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    "Bantuan Dari ⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ╔╡⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡╞╗ ",
-                    text="""**Anda Bisa Membuat ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Anda Sendiri\nDengan Cara :**__Tekan Dibawah Ini__ 👇""",
+                    " ╔╡⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡╞╗ ",
+                    text="""**ᴀɴᴅᴀ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ ᴀɴᴅᴀ sᴇɴᴅɪʀɪ\nᴅᴇɴɢᴀɴ ᴄᴀʀᴀ :**__ᴛᴇᴋᴀɴ ᴅɪʙᴀᴡᴀʜ ɪɴɪ__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅⚡",
+                                "⚡ᴘʜᴏᴇɴɪx⚡",
                                 "https://aryazakaria01.github.io/Phoenix-Userbot"),
                             custom.Button.url(
                                 "Dᴇᴠᴇʟᴏᴘᴇʀ",
@@ -610,7 +610,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"🚫!ᴡᴀʀɴɪɴɢ!🚫 ᴊᴀɴɢᴀɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴍɪʟɪᴋ {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -626,7 +626,7 @@ with bot:
                     file=lynxlogo,
                     link_preview=True,
                     buttons=[
-                          [Button.url("⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡", "t.me/Geezing_bot")],
+                          [Button.url("⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡", "t.me/Geezing_bot")],
                     ]
                 )
 
@@ -646,7 +646,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"🚫!ᴡᴀʀɴɪɴɢ!🚫 ᴊᴀɴɢᴀɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴍɪʟɪᴋ {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -663,7 +663,7 @@ with bot:
                 if len(cmdhel) > 150:
                     help_string = (
                         str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
-                        + "\n\nBaca Text Berikutnya Ketik .help "
+                        + "\n\nʙᴀᴄᴀ ᴛᴇxᴛ ʙᴇʀɪᴋᴜᴛɴʏᴀ ᴋᴇᴛɪᴋ .help "
                         + modul_name
                         + " "
                     )
@@ -678,15 +678,15 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"🚫!ᴡᴀʀɴɪɴɢ!🚫 ᴊᴀɴɢᴀɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴍɪʟɪᴋ {DEFAULTUSER}."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
     except BaseException:
         LOGS.info(
-            "Mode Inline Bot Mu Nonaktif. "
-            "Untuk Mengaktifkannya, Silahkan Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
+            "ᴍᴏᴅᴇ ɪɴʟɪɴᴇ ʙᴏᴛ ᴍᴜ ɴᴏɴᴀᴋᴛɪғ. "
+            "ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴋᴛɪғᴋᴀɴɴʏᴀ, sɪʟᴀʜᴋᴀɴ ᴘᴇʀɢɪ ᴋᴇ @ʙᴏᴛғᴀᴛʜᴇʀ ʟᴀʟᴜ, sᴇᴛᴛɪɴɢs ʙᴏᴛ > ᴘɪʟɪʜ ᴍᴏᴅᴇ ɪɴʟɪɴᴇ > ᴛᴜʀɴ ᴏɴ. ")
 
 with bot:
     try:
@@ -701,10 +701,10 @@ with bot:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ is Back Up and Running!**\n\n"
-        f"**Telethon :** __{version.__version__}__\n"
-        f"**Python :** __{python_version()}__\n"
-        f"**User :** __{DEFAULTUSER}__"
+        f"**⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ ɪs ʙᴀᴄᴋ ᴜᴘ ᴀɴᴅ ʀᴜɴɴɪɴɢ!**\n\n"
+        f"**ᴛᴇʟᴇᴛʜᴏɴ :** __{version.__version__}__\n"
+        f"**ᴘʏʜᴛᴏɴ :** __{python_version()}__\n"
+        f"**ᴜsᴇʀ :** __{DEFAULTUSER}__"
     )
     await bot.edit_message(chat_id, msg_id, message)
     return True
