@@ -1,39 +1,39 @@
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5513591.gif" width="654" height="163" alt="Lynx Userbot" /></a>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5513591.gif" width="654" height="163" alt="Phoenix Userbot" /></a>
 <p align="center"> 🚀 𝗪𝗵𝗶𝗰𝗵 𝗶𝘀 𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗕𝗮𝘀𝗲𝗱 🚀</p>
 <p align="center">
-  <a href="https://github.com/KENZO-404/Lynx-Userbot/fork"><img src="https://img.shields.io/github/forks/KENZO-404/Lynx-Userbot?label=Fork&style=social"></a>
+  <a href="https://github.com/aryazakaria01/Phoenix-Userbot/fork"><img src="https://img.shields.io/github/forks/Phoenix/Phoenix-Userbot?label=Fork&style=social"></a>
   </p>
 <p align="center">
-  <a href="https://github.com/KENZO-404/Lynx-Userbot"><img src="https://img.shields.io/github/stars/KENZO-404/Lynx-Userbot?style=social"></a>
+  <a href="https://github.com/aryazakaria01/Phoenix-Userbot"><img src="https://img.shields.io/github/stars/aryazakaria01/Phoenix-Userbot?style=social"></a>
   </p>
 <p align="center">
-  <a href="https://github.com/KENZO-404/Lynx-Userbot/blob/Lynx-Userbot/LICENSE"><img src="https://img.shields.io/github/license/KENZO-404/Lynx-Userbot?&style=social&logo=github">
+  <a href="https://github.com/aryazakaria01/Phoenix-Userbot/blob/Phoenix-Userbot/LICENSE"><img src="https://img.shields.io/github/license/aryazakaria01/Phoenix-Userbot?&style=social&logo=github">
   </a></p>
 
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/kenzo-404/lynx-userbot"><img src="https://www.codefactor.io/repository/github/kenzo-404/lynx-userbot/badge" alt="CodeFactor" /></a>
+<a href="https://www.codefactor.io/repository/github/aryazakaria01/phoenix-userbot"><img src="https://www.codefactor.io/repository/github/aryazakaria01/phoenix-userbot/badge" alt="CodeFactor" /></a>
 <p/>
 
 <p align="center">
- <a href="https://img.shields.io/github/repo-size/KENZO-404/Lynx-Userbot?&style=plastic&logo=github"
-[![GitHub issues](https://img.shields.io/github/issues/KENZO-404/Lynx-Userbot?&style=plastic&logo=github)](https://github.com/KENZO-404/Lynx-Userbot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/KENZO-404/Lynx-Userbot?&style=plastic&logo=github)](https://github.com/KENZO-404/Lynx-Userbot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/KENZO-404/Lynx-Userbot?&style=plastic&logo=github)](https://GitHub.com/KENZO-404/Lynx-Userbot/graphs/contributors/)
-[![PR Open](https://img.shields.io/github/issues-pr/KENZO-404/Lynx-Userbot?&style=plastic&logo=github)](https://github.com/KENZO-404/Lynx-Userbot/pulls)
-[![PR Closed](https://img.shields.io/github/issues-pr-closed/KENZO-404/Lynx-Userbot?&style=plastic&logo=github)](https://github.com/KENZO-404/Lynx-Userbot/pulls?q=is:closed)
+ <a href="https://img.shields.io/github/repo-size/aryazakaria1/Phoenix-Userbot?&style=plastic&logo=github"
+[![GitHub issues](https://img.shields.io/github/issues/aryazakaria1/Phoenix-Userbot?&style=plastic&logo=github)](https://github.com/aryazakaria1/Phoenix-Userbot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/aryazakaria1/Phoenix-Userbot?&style=plastic&logo=github)](https://github.com/aryazakaria1/Phoenix-Userbot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/aryazakaria1/Phoenix-Userbot?&style=plastic&logo=github)](https://GitHub.com/aryazakaria1/Phoenix-Userbot/graphs/contributors/)
+[![PR Open](https://img.shields.io/github/issues-pr/aryazakaria1/Phoenix-Userbot?&style=plastic&logo=github)](https://github.com/aryazakaria1/Phoenix-Userbot/pulls)
+[![PR Closed](https://img.shields.io/github/issues-pr-closed/aryazakaria1/Phoenix-Userbot?&style=plastic&logo=github)](https://github.com/aryazakaria1/Phoenix-Userbot/pulls?q=is:closed)
 </p>
 
 <p align="center">
-<a href="https://github.com/KENZO-404/Lynx-Userbot/commits/Lynx-Userbot"><img src="https://img.shields.io/github/last-commit/KENZO-404/Lynx-Userbot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
-<a href="https://github.com/KENZO-404/Lynx-Userbot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/KENZO-404/Lynx-Userbot/CI/Lynx-Userbot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
+<a href="https://github.com/aryazakaria1/Phoenix-Userbot/commits/Phoenix-Userbot"><img src="https://img.shields.io/github/last-commit/aryazakaria1/Phoenix-Userbot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
+<a href="https://github.com/aryazakaria1/Phoenix-Userbot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/aryazakaria1/Phoenix-Userbot/CI/Phoenix-Userbot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
 </p>
 <p align="center">
 <a href="https://pypi.org/project/Telethon/"><img src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=brightgreen&style=for-the-badge" /></a>
 <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.5-white?style=for-the-badge&logo=appveyor"/>
 </p>
 <p align="center">
-<a href="https://hub.docker.com/r/kenzo404/lynxuser"> <img src="https://img.shields.io/docker/image-size/kenzo404/lynxuser/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
-<a href="https://hub.docker.com/r/kenzo404/lynxuser/tags"> <img src="https://img.shields.io/docker/v/kenzo404/lynxuser/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
+<a href="https://hub.docker.com/r/aryazakaria01/phoenixuser"> <img src="https://img.shields.io/docker/image-size/aryazakaria01/phoenixuser/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
+<a href="https://hub.docker.com/r/aryazakaria01/phoenixuser/tags"> <img src="https://img.shields.io/docker/v/aryazakaria01/phoenixuser/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
 </p>
 
 <h2 align="center">
@@ -41,11 +41,11 @@
 </p>
 
 <p align="center">
-   <a href = "https://heroku.com/deploy?template=https://github.com/KENZO-404/Lynx-Userbot/tree/Lynx-Userbot"><img src="https://telegra.ph/file/f3c656862a017f945c0bc.png" alt="Press to Takeoff" width="490px"></a>
+   <a href = "https://heroku.com/deploy?template=https://github.com/aryazakaria01/Phoenix-Userbot/tree/Phoenix-Userbot"><img src="https://telegra.ph/file/83d28616efc046ba6cc9b.jpg" alt="Press to Takeoff" width="490px"></a>
 </p>
 <br>
 
-<h3 align="center">Userbot Used for Fun on Telegram, and for Maintianing Your Group,If you found another repo like same from this repo plis report coz he don't have permission (KANGERR).</h3>
+<h3 align="center">ᴜsᴇʀʙᴏᴛ ᴜsᴇᴅ ғᴏʀ ғᴜɴ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ, ᴀɴᴅ ғᴏʀ ᴍᴀɪɴᴛɪᴀɴɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ,ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴᴏᴛʜᴇʀ ʀᴇᴘᴏ ʟɪᴋᴇ sᴀᴍᴇ ғʀᴏᴍ ᴛʜɪs ʀᴇᴘᴏ ᴘʟɪs ʀᴇᴘᴏʀᴛ ᴄᴏᴢ ʜᴇ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴ (KANGERR).</h3>
 <p align="center">&nbsp;</p>
 
 ### ⚒️ How To Get a API_ID and API_HASH ?
@@ -72,9 +72,9 @@
 
  2. Wait for the installation to finish, if you have copied the one below.
 
-<T>   $ pip install telethon && wget https://raw.githubusercontent.com/KENZO-404/Lynx-Userbot/Lynx-Userbot/string_session.py && python string_session.py
+<T>   $ pip install telethon && wget https://raw.githubusercontent.com/aryazakaria01/Phoenix-Userbot/Phoenix-Userbot/string_session.py && python string_session.py
 
-<P>   $ wget https://raw.githubusercontent.com/KENZO-404/Lynx-String-Session/master/pyrogram-session.py && python string_session.py
+<P>   $ wget https://raw.githubusercontent.com/aryazakaria01/Phoenix-String-Session/master/pyrogram-session.py && python string_session.py
 
  <T> (For Telethon) and <P> (For Pyrogram)
  Just choose Telethon if you want to deploy.
@@ -83,9 +83,9 @@
 
 ```
 
-## <p align="center"> DEPLOY ⚡Lynx-Userbot⚡</p>
+## <p align="center"> DEPLOY ⚡Phoenix-Userbot⚡</p>
 
-<p align="center"><a href="https://ganosecteam.my.id/"><img src="https://img.shields.io/badge/Don't%20Click%20Bro%20,%20Will be Ban-Purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Faryazakaria01%2FPhoenix-Userbot%2Ftree%2FPhoenix-Userbot"><img src="https://img.shields.io/badge/Don't%20Click%20Bro%20,%20Will be Ban-Purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
