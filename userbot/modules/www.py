@@ -102,7 +102,7 @@ async def redis(pong):
     await pong.edit("__Connecting to data center...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡**\n"
+    await pong.edit(f"**⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡**\n"
                     f"➾ __Signal__    __:__ "
                     f"`%sms` \n"
                     f"➾ __Uptime__ __:__ "
@@ -128,7 +128,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**╭─━━━━━━━━━━━━━━━─╮** \n"
-                    f"**       ⚡𝗣𝗵𝗼𝗲𝗻𝗶𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡** \n"
+                    f"**       ⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡** \n"
                     f"**╭─━━━━━━━━━━━━━━━─╯** \n"
                     f"**│⊙  Sɪɢɴᴀʟ   :** "
                     f"`%sms` \n"
