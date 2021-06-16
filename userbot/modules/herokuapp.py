@@ -43,7 +43,7 @@ async def variable(var):
                        "\nHarap Siapkan`  **HEROKU_APP_NAME**.")
         return False
     if exe == "get":
-        await var.edit("`Mendapatkan Informasi...`")
+        await var.edit("`ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴғᴏʀᴍᴀsɪ...`")
         variable = var.pattern_match.group(2)
         if variable != '':
             if variable in heroku_var:
@@ -53,13 +53,13 @@ async def variable(var):
                         "**Config Vars**:\n"
                         f"`{variable}` **=** `{heroku_var[variable]}`\n"
                     )
-                    await var.edit("`Diterima Ke BOTLOG_CHATID...`")
+                    await var.edit("`ᴅɪᴛᴇʀɪᴍᴀ ᴋᴇ BOTLOG_CHATID...`")
                     return True
                 else:
-                    await var.edit("`Mohon Ubah BOTLOG Ke True...`")
+                    await var.edit("`ᴍᴏʜᴏɴ ᴜʙᴀʜ BOTLOG ᴋᴇ ᴛʀᴜᴇ...`")
                     return False
             else:
-                await var.edit("`Informasi Tidak Ditemukan...`")
+                await var.edit("`ɪɴғᴏʀᴍᴀsɪ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ...`")
                 return True
         else:
             configvars = heroku_var.to_dict()
@@ -72,64 +72,64 @@ async def variable(var):
                     "**Config Vars**:\n"
                     f"{msg}"
                 )
-                await var.edit("`Diterima Ke BOTLOG_CHATID`")
+                await var.edit("`ᴅɪᴛᴇʀɪᴍᴀ ᴋᴇ BOTLOG_CHATID`")
                 return True
             else:
-                await var.edit("`Mohon Ubah BOTLOG Ke True`")
+                await var.edit("`ᴍᴏʜᴏɴ ᴜʙᴀʜ BOTLOG ᴋᴇ ᴛʀᴜᴇ`")
                 return False
     elif exe == "del":
-        await var.edit("`Menghapus Config Vars... 😼`")
+        await var.edit("`ᴍᴇɴɢʜᴀᴘᴜs ᴄᴏɴғɪɢ ᴠᴀʀs... 😼`")
         variable = var.pattern_match.group(2)
         if variable == '':
-            await var.edit("`Mohon Tentukan Config Vars Yang Mau Anda Hapus`")
+            await var.edit("`ᴍᴏʜᴏɴ ᴛᴇɴᴛᴜᴋᴀɴ ᴄᴏɴғɪɢ ᴠᴀʀs ʏᴀɴɢ ᴍᴀᴜ ᴀɴᴅᴀ ʜᴀᴘᴜs`")
             return False
         if variable in heroku_var:
             if BOTLOG:
                 await var.client.send_message(
-                    BOTLOG_CHATID, "#MenghapusConfigVars\n\n"
-                    "**Menghapus Config Vars**:\n"
+                    BOTLOG_CHATID, "#ᴍᴇɴɢʜᴀᴘᴜsᴄᴏɴғɪɢᴠᴀʀs\n\n"
+                    "**ᴍᴇɴɢʜᴀᴘᴜs ᴄᴏɴғɪɢ ᴠᴀʀs**:\n"
                     f"`{variable}`"
                 )
-            await var.edit("`Config Vars Telah Dihapus`")
+            await var.edit("`ᴄᴏɴғɪɢ ᴠᴀʀs ᴛᴇʟᴀʜ ᴅɪʜᴀᴘᴜs`")
             del heroku_var[variable]
         else:
-            await var.edit("`Tidak Dapat Menemukan Config Vars, Kemungkinan Telah Anda Hapus.`")
+            await var.edit("`ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴ ᴄᴏɴғɪɢ ᴠᴀʀs, ᴋᴇᴍᴜɴɢᴋɪɴᴀɴ ᴛᴇʟᴀʜ ᴀɴᴅᴀ ʜᴀᴘᴜs.`")
             return True
 
 
 @register(outgoing=True, pattern=r'^.set var (\w*) ([\s\S]*)')
 async def set_var(var):
-    await var.edit("`Sedang Menyetel Config Vars ヅ`")
+    await var.edit("`sᴇᴅᴀɴɢ ᴍᴇɴʏᴇᴛᴇʟ ᴄᴏɴғɪɢ ᴠᴀʀs ヅ`")
     variable = var.pattern_match.group(1)
     value = var.pattern_match.group(2)
     if variable in heroku_var:
         if BOTLOG:
             await var.client.send_message(
-                BOTLOG_CHATID, "#SetelConfigVars\n\n"
-                "**Mengganti Config Vars**:\n"
+                BOTLOG_CHATID, "#sᴇᴛᴇʟᴄᴏɴғɪɢᴠᴀʀs\n\n"
+                "**ᴍᴇɴɢɢᴀɴᴛɪ ᴄᴏɴғɪɢ ᴠᴀʀs**:\n"
                 f"`{variable}` = `{value}`"
             )
-        await var.edit("`Sedang Di Proses Yang Mulia, Mohon Menunggu Dalam Beberapa Detik 😼`")
+        await var.edit("`sᴇᴅᴀɴɢ ᴅɪ ᴘʀᴏsᴇs ʏᴀɴɢ ᴍᴜʟɪᴀ, ᴍᴏʜᴏɴ ᴍᴇɴᴜɴɢɢᴜ ᴅᴀʟᴀᴍ ʙᴇʙᴇʀᴀᴘᴀ ᴅᴇᴛɪᴋ 😼`")
     else:
         if BOTLOG:
             await var.client.send_message(
-                BOTLOG_CHATID, "#MenambahkanConfigVar\n\n"
-                "**Menambahkan Config Vars**:\n"
+                BOTLOG_CHATID, "#ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴᴄᴏɴғɪɢᴠᴀʀ\n\n"
+                "**ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴄᴏɴғɪɢ ᴠᴀʀs**:\n"
                 f"`{variable}` **=** `{value}`"
             )
-        await var.edit("`Yang Mulia Menambahkan Config Vars...`")
+        await var.edit("`ʏᴀɴɢ ᴍᴜʟɪᴀ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴄᴏɴғɪɢ ᴠᴀʀs...`")
     heroku_var[variable] = value
 
 
 """
-    Check account quota, remaining quota, used quota, used app quota
+    ᴄʜᴇᴄᴋ ᴀᴄᴄᴏᴜɴᴛ ǫᴜᴏᴛᴀ, ʀᴇᴍᴀɪɴɪɴɢ ǫᴜᴏᴛᴀ, ᴜsᴇᴅ ǫᴜᴏᴛᴀ, ᴜsᴇᴅ ᴀᴘᴘ ǫᴜᴏᴛᴀ
 """
 
 
 @register(outgoing=True, pattern=r"^.kuota(?: |$)")
 async def dyno_usage(dyno):
     """
-        Get your account Dyno Usage
+        ɢᴇᴛ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ᴅʏɴᴏ ᴜsᴀɢᴇ
     """
     await dyno.edit("⚡")
     await asyncio.sleep(1)
@@ -153,20 +153,20 @@ async def dyno_usage(dyno):
                     f"`{r.reason}`",
                     reply_to=dyno.id
                 )
-                await dyno.edit("`Tidak Bisa Mendapatkan Informasi Dyno Anda 😿`")
+                await dyno.edit("`ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴғᴏʀᴍᴀsɪ ᴅʏɴᴏ ᴀɴᴅᴀ 😿`")
                 return False
             result = await r.json()
             quota = result['account_quota']
             quota_used = result['quota_used']
 
-            """ - User Quota Limit and Used - """
+            """ - ᴜsᴇʀ ǫᴜᴏᴛᴀ ʟɪᴍɪᴛ ᴀɴᴅ ᴜsᴇᴅ - """
             remaining_quota = quota - quota_used
             percentage = math.floor(remaining_quota / quota * 100)
             minutes_remaining = remaining_quota / 60
             hours = math.floor(minutes_remaining / 60)
             minutes = math.floor(minutes_remaining % 60)
 
-            """ - User App Used Quota - """
+            """ - ᴜsᴇʀ ᴀᴘᴘ ᴜsᴇᴅ ǫᴜᴏᴛᴀ - """
             Apps = result['apps']
             for apps in Apps:
                 if apps.get('app_uuid') == app.id:
@@ -183,15 +183,15 @@ async def dyno_usage(dyno):
 
             await dyno.edit(
                 "╭┈─╼━━━━━━━━━━━━━━━╾─┈╮ \n"
-                "│      ⇱ ⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ⇲ \n"
+                "│      ⇱ ⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ ⇲ \n"
                 "╭┈─╼━━━━━━━━━━━━━━━╾─┈╮ \n"
-                "│📱◈ 𝐏𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐚𝐧 𝐊𝐮𝐨𝐭𝐚 𝐀𝐧𝐝𝐚 : \n"
+                "│📱◈ ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴋᴜᴏᴛᴀ ᴀɴᴅᴀ : \n"
                 f"│⏳◈ {AppHours} Jam - {AppMinutes} Menit. \n"
                 f"│⚡◈ 𝐏𝐞𝐫𝐬𝐞𝐧𝐭𝐚𝐬𝐞 : {AppPercentage}% \n"
                 "╰┈───────────────────┈╮ \n"
-                "│📱◈ 𝐒𝐢𝐬𝐚 𝐊𝐮𝐨𝐭𝐚 𝐁𝐮𝐥𝐚𝐧 𝐈𝐧𝐢 : \n"
+                "│📱◈ sɪsᴀ ᴋᴜᴏᴛᴀ ʙᴜʟᴀɴ ɪɴɪ : \n"
                 f"│⏳◈ {hours} Jam - {minutes} Menit. \n"
-                f"│⚡◈ 𝐏𝐞𝐫𝐬𝐞𝐧𝐭𝐚𝐬𝐞 : {percentage}% Lagi. \n"
+                f"│⚡◈ ᴘʀᴇsᴇɴᴛᴀsᴇ : {percentage}% Lagi. \n"
                 "╰┈───────────────────┈╯ \n"
                 f"• Oᴡɴᴇʀ  : {ALIVE_NAME} \n"
             )
