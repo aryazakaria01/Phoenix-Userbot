@@ -67,23 +67,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Phoenix-Userbot....`")
+    await event.edit("`ᴍᴇᴍᴀᴛɪᴋᴀɴ ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`Phoenix-Userbot Telah Dimatikan`")
+                                        "`ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ ᴛᴇʟᴀʜ ᴅɪᴍᴀᴛɪᴋᴀɴ`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Phoenix-Userbot...`")
+    await event.edit("`ʀᴇsᴛᴀʀᴛɪɴɢ ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ...`")
     await asyncio.sleep(3)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT\n"
-                                        "`Phoenix-Userbot Reconnecting...`")
+                                        "`ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ ʀᴇᴄᴏɴɴᴇᴄᴛɪɴɢ...`")
     try:
         from userbot.modules.sql_helper.globals import addgvar, delgvar
 
@@ -102,8 +102,8 @@ async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
         "\n[⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ Repo](https://github.com/aryazakaria01/Phoenix-Userbot/blob/Phoenix-Userbot/README.md)"
-        "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
-        "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
+        "\n[sᴇᴛᴜᴘ ɢᴜɪᴅᴇ - ʙᴀsɪᴄ](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
+        "\n[sᴘᴇᴄɪᴀʟ - ɴᴏᴛᴇ](https://telegra.ph/Special-Note-11-02)")
 
 
 @register(outgoing=True, pattern="^.repeat (.*)")
