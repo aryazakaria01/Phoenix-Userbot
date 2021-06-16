@@ -167,7 +167,7 @@
       "description": "Nama untuk menunjukan pesan .alive",
       "required": false
     },
-    "LYNX_TEXT_CUSTOM": {
+    "PHOENIX_TEXT_CUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .phoenix (Isi Terserah)",
       "required": false
     },
