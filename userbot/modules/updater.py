@@ -38,10 +38,10 @@ async def gen_chlog(repo, diff):
 
 async def print_changelogs(event, ac_br, changelog):
     changelog_str = (
-        f"**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
+        f"**ɴᴇᴡ ᴜᴘᴅᴀᴛᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
     )
     if len(changelog_str) > 4096:
-        await event.edit("`Changelog is too big, view the file to see it.`")
+        await event.edit("`ᴄʜᴀɴɢᴇʟᴏɢ ɪs ᴛᴏᴏ ʙɪɢ, ᴠɪᴇᴡ ᴛʜᴇ ғɪʟᴇ ᴛᴏ sᴇᴇ ɪᴛ.`")
         file = open("output.txt", "w+")
         file.write(changelog_str)
         file.close()
@@ -69,8 +69,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         heroku_applications = heroku.apps()
         if HEROKU_APP_NAME is None:
             await event.edit(
-                "`Please set up HEROKU_APP_NAME variable"
-                " to be able to deploy your userbot...`"
+                "`ᴘʟᴇᴀsᴇ sᴇᴛ ᴜᴘ HEROKU_API_KEY ᴠᴀʀɪᴀʙʟᴇ"
+                " ᴛᴏ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴅᴇᴘʟᴏʏ ʏᴏᴜʀ ᴜsᴇʀʙᴏᴛ...`"
             )
             repo.__del__()
             return
@@ -80,15 +80,15 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n" "`Invalid Heroku credentials for deploying userbot dyno.`"
+                f"{txt}\n" "`ɪɴᴠᴀʟɪᴅ ʜᴇʀᴏᴋᴜ ᴄʀᴇᴅᴇɴᴛɪᴀʟs ғᴏʀ ᴅᴇᴘʟᴏʏɪɴɢ ᴜsᴇʀʙᴏᴛ ᴅʏɴᴏ.`"
             )
             return repo.__del__()
-        await event.edit("`Userbot dyno build in progress, please wait...`")
+        await event.edit("`ᴜsᴇʀʙᴏᴛ ᴅʏɴᴏ ʙᴜɪʟᴅ ɪɴ ᴘʀᴏɢʀᴇss, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...`")
         try:
             from userbot.modules.sql_helper.globals import addgvar, delgvar
 
-            delgvar("restartstatus")
-            addgvar("restartstatus", f"{event.chat_id}\n{event.id}")
+            delgvar("ʀᴇsᴛᴀʀᴛsᴛᴀᴛᴜs")
+            addgvar("ʀᴇsᴛᴀʀᴛsᴛᴀᴛᴜs", f"{event.chat_id}\n{event.id}")
         except AttributeError:
             pass
         ups_rem.fetch(ac_br)
@@ -109,14 +109,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         build = heroku_app.builds(order_by="created_at", sort="desc")[0]
         if build.status == "failed":
             await event.edit(
-                "`Build failed!\n" "Cancelled or there were some errors...`"
+                "`ʙᴜɪʟᴅ ғᴀɪʟᴇᴅ!\n" "ᴄᴀɴᴄᴇʟʟᴇᴅ ᴏʀ ᴛʜᴇʀᴇ ᴡᴇʀᴇ sᴏᴍᴇ ᴇʀʀᴏʀs...`"
             )
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Successfully deployed!\n" "Restarting, please wait...`")
+            await event.edit("`sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴘʟᴏʏᴇᴅ!\n" "ʀᴇsᴛᴀʀᴛɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...`")
     else:
-        await event.edit("`Please set up HEROKU_API_KEY variable...`")
+        await event.edit("`ᴘʟᴇᴀsᴇ sᴇᴛ ᴜᴘ HEROKU_API_KEY ᴠᴀʀɪᴀʙʟᴇ...`")
     return
 
 
@@ -126,14 +126,14 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await event.edit(
-        "`Successfully Updated!\n" "Bot is restarting... Wait for a second!`"
+        "`sᴜᴄᴄᴇssғᴜʟʟʏ ᴜᴘᴅᴀᴛᴇᴅ!\n" "ʙᴏᴛ ɪs ʀᴇsᴛᴀʀᴛɪɴɢ... ᴡᴀɪᴛ ғᴏʀ ᴀ sᴇᴄᴏɴᴅ!`"
     )
 
     try:
         from userbot.modules.sql_helper.globals import addgvar, delgvar
 
-        delgvar("restartstatus")
-        addgvar("restartstatus", f"{event.chat_id}\n{event.id}")
+        delgvar("ʀᴇsᴛᴀʀᴛsᴛᴀᴛᴜs")
+        addgvar("ʀᴇsᴛᴀʀᴛsᴛᴀᴛᴜs", f"{event.chat_id}\n{event.id}")
     except AttributeError:
         pass
 
@@ -145,13 +145,13 @@ async def update(event, repo, ups_rem, ac_br):
 @register(outgoing=True, pattern=r"^\.update( now| deploy|$)")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Getting information....`")
+    await event.edit("`ɢᴇᴛᴛɪɴɢ ɪɴғᴏʀᴍᴀᴛɪᴏɴ....`")
     conf = event.pattern_match.group(1).strip()
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Oops.. Updater cannot continue due to "
-        txt += "some problems occured`\n\n**LOGTRACE:**\n"
+        txt = "`ᴏᴏᴘs.. ᴜᴘᴅᴀᴛᴇʀ ᴄᴀɴɴᴏᴛ ᴄᴏɴᴛɪɴᴜᴇ ᴅᴜᴇ ᴛᴏ "
+        txt += "sᴏᴍᴇ ᴘʀᴏʙʟᴇᴍs ᴏᴄᴄᴜʀᴇᴅ`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
         await event.edit(f"{txt}\n`directory {error} is not found`")
@@ -196,13 +196,13 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     """ - Special case for deploy - """
     if conf == "deploy":
-        await event.edit("`Deploying userbot, please wait....`")
+        await event.edit("`ᴅᴇᴘʟᴏʏɪɴɢ ᴜsᴇʀʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ....`")
         await deploy(event, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and force_update is False:
         await event.edit(
-            "\n`Your USERBOT is`  **up-to-date**  `with`  "
+            "\n`ʏᴏᴜʀ ᴜsᴇʀʙᴏᴛ ɪs`  **ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ**  `ᴡɪᴛʜ`  "
             f"**{UPSTREAM_REPO_BRANCH}**\n"
         )
         return repo.__del__()
@@ -217,7 +217,7 @@ async def upstream(event):
             "`Force-Syncing to latest stable userbot code, please wait...`"
         )
     if conf == "now":
-        await event.edit("`Updating userbot, please wait....`")
+        await event.edit("`ᴜᴘᴅᴀᴛɪɴɢ ᴜsᴇʀʙᴏᴛ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ....`")
         await update(event, repo, ups_rem, ac_br)
     return
 
