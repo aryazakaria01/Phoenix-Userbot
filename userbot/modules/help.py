@@ -42,10 +42,10 @@ async def help(event):
             string += "`\t|  "
         await event.edit("⚡")
         await asyncio.sleep(3)
-        await event.edit("**⚡𝗟𝘆𝗻𝘅-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡**\n\n"
+        await event.edit("**⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡**\n\n"
                          f"**◑» Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n**◑» Pʟᴜɢɪɴ : {len(modules)}**\n\n"
                          "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
                          f"╰►| {string} ◄─\n\n")
-        await event.reply(f"\n**Contoh** : Ketik » `.help busy` Untuk Informasi Pengunaan Plugin Busy.\nAtau Bisa Juga Dengan Cara, Ketik `.helpme` Untuk Menggunakan Inline Bot Dari @BotFather.\n Jika Tidak Tahu Caranya, Silahkan Bertanya ke » [sini](t.me/SyndicateTwenty4) « Terimakasih 🙏")
+        await event.reply(f"\n**Contoh** : Ketik » `.help busy` Untuk Informasi Pengunaan Plugin Busy.\nAtau Bisa Juga Dengan Cara, Ketik `.helpme` Untuk Menggunakan Inline Bot Dari @BotFather.\n Jika Tidak Tahu Caranya, Silahkan Bertanya ke » [sini](t.me/Badboyanim) « Terimakasih 🙏")
         await asyncio.sleep(1000)
         await event.delete()
