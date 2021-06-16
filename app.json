@@ -1,6 +1,6 @@
 {
-  "name": "Lynx-Userbot",
-  "description": "[⚡**Phoenix**-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "Phoenix-Userbot",
+  "description": "[⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/f3c656862a017f945c0bc.png",
   "keywords": [
     "telegram",
@@ -160,7 +160,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "⚡**Phoenix**-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡",
+      "value": "⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡",
       "required": false
     },
     "ALIVE_NAME": {
@@ -168,7 +168,7 @@
       "required": false
     },
     "LYNX_TEXT_CUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .lynx (Isi Terserah)",
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .phoenix (Isi Terserah)",
       "required": false
     },
     "S_PACK_NAME": {
