@@ -412,7 +412,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```⚡ᴘʜᴏᴇɴɪx-ᴜsᴇʀʙᴏᴛ⚡ ʜᴀs ʙᴇᴇɴ ᴀᴄᴛɪᴠᴇ!!```")
     return
 
 with bot:
