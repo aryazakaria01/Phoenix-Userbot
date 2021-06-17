@@ -245,7 +245,7 @@ async def amireallyalive(alive):
         f"┞╼════════════════════╾┤\n"
         f"├◈ **{LYNX_TEXT_CUSTOM}**\n"
         f"╰╼════════════════════╾╯\n"
-        f"| [𝗥𝗲𝗽𝗼](https://aryazakaria01.github.io/Phoenix-Userbot) | [𝗚𝗲𝗲𝘇-𝗧𝗲𝗮𝗺](t.me/GeezSupportGroup) | 
+        f"| [𝗥𝗲𝗽𝗼](https://aryazakaria01.github.io/Phoenix-Userbot) | [𝗚𝗲𝗲𝘇-𝗧𝗲𝗮𝗺](t.me/GeezSupportGroup) |")
 
     if ALIVE_LOGO:
         try:
