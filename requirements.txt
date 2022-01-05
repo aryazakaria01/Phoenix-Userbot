@@ -103,4 +103,4 @@ pendulum
 rarfile
 natsort
 hentai
-Faker==8.8.0
+Faker==11.3.0
